@@ -1,7 +1,7 @@
 # Introduction
 This project is an assignment for the AI/ ML certification course offered by UC Berkeley. In this project, I am analyzing used car data set with different models to answer the question "What drives the price of a car"
 
-**Jupyter Notebook with code, experimentation, further insights, and deployment strategies: [here](https://github.com/vivianamarquez/Regression-Sklearn-Diabetes-Dataset/blob/main/Regression_Example.ipynb).**
+**Jupyter Notebook with code, experimentation, further insights, and deployment strategies: [here](https://github.com/mimibhatt/Price_Of_A_Car/blob/main/prompt_II_1.ipynb).**
 
 **Website for this repo: [here](https://github.com/mimibhatt/Price_Of_A_Car).**
 
