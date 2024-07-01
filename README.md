@@ -11,27 +11,24 @@ The goal is to understand what factors make a car more or less expensive. This w
 
 ## Data
 
-The data set is used car data of 426K rows and 17 columns. 
-The dataset contains 4 numeric variables, 13 categorical variables and the target variable is the price of a car.
+The data set is used car data of 426K rows and 17 columns. The dataset contains 4 numeric variables, 13 categorical variables and the target variable is the price of a car.
 
 
-![Distribution of Target Variable](images/DistributionTargetVariable.png)
+![Distribution of Target Variable](images/histplot.png)
 
 ## Modeling and performance
 
-In this project, we employed various regression modeling techniques to predict diabetes progression using the diabetes dataset from `sklearn`. The models evaluated include `Linear Regression`, `Ridge Regression`, `Lasso Regression`, and `Elastic Net Regression`. Each model was trained and evaluated using a train/test split, followed by cross-validation and hyperparameter tuning using GridSearchCV to optimize performance. 
+In this project, we employed various regression modeling techniques to predict used car sale prices. The models evaluated include `Linear Regression`, `Ridge Regression`, `Lasso Regression`. Each model was trained and evaluated using a train/test split, followed by cross-validation and hyperparameter tuning using GridSearchCV to optimize performance. Due to the data set consisting of a large number of categorical variables, encoding them resulted in more than 11K columns, due to which training the set was a challenge. The cross validation, feature selection using SFS, hyperparameter tuning using GridSearchCV was not possible as the process ran for a long time.
 
-Among these, the Lasso Regression model demonstrated the best performance with a `Root Mean Squared Error (RMSE) of 52.8980` and an` R-squared (R²) value of 0.4719`. That means that the model's prefictions are off by about 52..90 units from the actual values of diabetes progression andapproximately 47.19% of the variance in the disease progression is explained by the features in the model. 
+Between Linear and Ridge Regression model, Ridge demonstrated the best performance with a `Root Mean Squared Error` (RMSE)  = 3832.3144, `R-squared` (R²) = 0.8751. That means that the model's prefictions are off by about 3832.3144 units from the actual values of price andapproximately 87.51% of the variance in the price as explained by the features in the model. 
+
+The RMSE and R2 values indicate, the model can be improved significantly if we are able to figure out the important features and retrain the model.
 
 <iframe src="https://vivianamarquez.com/Regression-Sklearn-Diabetes-Dataset/images/actual_vs_predicted.html" width="100%" height="600px"></iframe>
 
 To see the interactive plot of actual vs. predicted values, please click the link below:
-[Actual vs. Predicted Values](https://vivianamarquez.com/Regression-Sklearn-Diabetes-Dataset/images/actual_vs_predicted.html)
+[Actual vs. Predicted Values](https://vivianamarquez.com/Regression-Sklearn-Diabetes-Dataset/images/actual_vs_predicted.png)
 
-
-These metrics indicate that the Lasso Regression model provides a moderate level of accuracy in predicting diabetes progression, making it the most suitable model for this dataset. The model's ability to perform feature selection through L1 regularization helped in identifying the most significant predictors, thus enhancing interpretability and relevance.
-
-(Note: This notebook is for teaching purposes, so ensemble models were not included.)
 
 ## Conclusions
 
