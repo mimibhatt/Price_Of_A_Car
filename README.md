@@ -26,7 +26,7 @@ The RMSE and R2 values indicate, the model can be improved significantly if we a
 
 
 To see the interactive plot of actual vs. predicted values, please click the link below:
-[Actual vs. Predicted Values](https://github.com/mimibhatt/Price_Of_A_Car/tree/main/images/actual_vs_predicted.png)
+[Actual vs. Predicted Values](images/actual_vs_predicted.png)
 
 
 ## Conclusions
