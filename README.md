@@ -32,33 +32,40 @@ To see the interactive plot of actual vs. predicted values, please click the lin
 
 ## Conclusions
 
-The model revealed that there’s a significant relationship between certain features and the target variable (diabetes progression). Specifically, BMI, serum triglycerides, and blood pressure are positively associated with increased disease progression, while HDL cholesterol and T-Cells are negatively associated. These findings provide actionable insights for managing diabetes more effectively.
+Since I could not find the most important variables that affect the used car prices, I based my inference on the initial findings through plotting each feature against price. This does shed light on how each feature is correlated to the target variable price.
 
 #### Interesting Findings
 
-| Feature                                 | Recommendation                                                                                     | Coefficient Value | Impact               | Interpretation                                                                                  |
-|-----------------------------------------|--------------------------------------------------------------------------------------------------|-------------------|----------------------|-------------------------------------------------------------------------------------------------|
-| Body Mass Index (BMI)                   | Implement and encourage weight management programs to reduce BMI.                                | 552.697775        | Strong positive      | Higher BMI is strongly associated with increased diabetes progression.                          |
-| Serum Triglycerides (s5)                | Advocate for dietary changes that lower triglyceride levels, such as reducing sugar intake.       | 447.919525        | Strong positive      | Higher serum triglycerides levels are associated with increased diabetes progression.            |
-| Blood Pressure (BP)                     | Encourage regular blood pressure monitoring and provide resources for managing high blood pressure. | 303.365158        | Significant positive | Higher blood pressure is associated with increased diabetes progression.                        |
-| High-Density Lipoproteins (HDL) Cholesterol (s3) | Encourage diets rich in healthy fats to increase HDL levels.                                      | -229.255776       | Strong negative      | Higher HDL cholesterol levels are associated with decreased diabetes progression.                |
-| Sex                                     | Develop personalized treatment plans that consider the patient’s sex.                            | -152.664779       | Significant negative | Differential impact based on sex, with higher values (likely males) associated with lower progression. |
-| T-Cells (s1)                            | Focus on treatments and interventions that may boost T-Cells levels if applicable.                | -81.365007        | Moderate negative    | Higher levels of T-Cells are associated with decreased diabetes progression.                    |
-| Blood Sugar Level (s6)                  | Provide education on managing blood sugar levels and ensure regular monitoring.                   | 29.642617         | Positive             | Higher blood sugar levels are associated with increased diabetes progression.                    |
-| Age                                     | No specific recommendation needed based on this feature.                                          | 0.000000          | None                 | Age does not contribute to predicting diabetes progression.                                      |
-| Low-Density Lipoproteins (LDL) Cholesterol (s2) | No specific recommendation needed based on this feature.                                          | 0.000000          | None                 | LDL cholesterol does not contribute to predicting diabetes progression.                          |
-| Total Cholesterol/HDL Ratio (s4)        | No specific recommendation needed based on this feature.                                          | 0.000000          | None                 | The total cholesterol/HDL ratio does not contribute to predicting diabetes progression.          |
+**Condition**: Prices generally decrease as the condition worsens, with new and like-new vehicles priced higher than those in fair or salvage condition.
+
+**Drive**: Four-wheel drive vehicles command the highest prices, followed by front-wheel and rear-wheel drive vehicles.
+
+**Type**: Pickup trucks and SUVs tend to have higher average prices, whereas hatchbacks, buses, and vans are priced lower on average.
+Central Tendency: The median price is around $15,000
+
+**Odometer**: Vehicles with lower mileage generally have higher prices, confirming that lower usage is associated with higher value
+
+**Fuel Type**: Gas vehicles dominate the dataset. Diesel, hybrid, and electric vehicles are less common but show varied prices
+
+**Transmission**: Automatic transmission is the most common, manual transmission vehicles tend to be lower-priced
+
+**Year**: There is a clear trend of newer vehicles having higher prices, with older vehicles being significantly cheaper
+
+**Cylinders**: There is a clear trend of increasing average vehicle price with the number of cylinders. This reflects the association of more cylinders with higher performance and luxury vehicles
+
+**Manufacturer**: Luxury and high-performance brands such as Ferrari, Porsche, and Tesla command the highest average prices. Mainstream brands like Toyota and Ford have lower average prices, reflecting a broader market appeal and a mix of economy and mid-range vehicles
+
+**Outliers**: There are significant outliers, as seen from the Actual versus Predicted plot, which may need further investigation.
+Also the RMSE derived for Ridge and Linear regression are not particularly good and might benefit from feature selection
+
+The disadvantage of this dataset was, due to a large number of categorical variables, it takes too long to train a model, do Grid search or feature selection.
 
 
 ### Actionable insights
 
-- **Weight Management Programs:** Develop and promote programs focused on weight management, such as nutrition counseling, exercise regimes, and support groups to help reduce BMI.
+- **Improve the model:** Filter the dataset to improve the speed of model training and increasing processing speed to determine the important predictors for price.
 
-- **Blood Pressure Monitoring**: Encourage regular blood pressure check-ups and provide resources for managing high blood pressure through lifestyle changes and medication.
+- **Improve inventory:** Based on the above findings, keeping inventory of cars with less odometer reading, gas vehicles preferably SUVs of manufactureres Toyota, Ford in a reasonably good condition will help increase the sale and fetch good prices.
 
-- **Personalized Care:** Develop personalized treatment plans that consider the patient’s sex to optimize care and manage diabetes progression more effectively.
 
-- **Diet and Lifestyle Adjustments:** Encourage diets rich in healthy fats, such as those found in fish, nuts, and olive oil, to increase HDL cholesterol levels. Advocate for dietary changes that lower triglyceride levels, such as reducing sugar and refined carbohydrates intake.
-
-- **Blood Sugar Control, Education and Tools:** Provide patients with education on managing blood sugar levels, including the use of glucometers and adherence to medication.
  
