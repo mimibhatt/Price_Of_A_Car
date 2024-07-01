@@ -3,7 +3,7 @@ This project is an assignment for the AI/ ML certification course offered by UC 
 
 **Jupyter Notebook with code, experimentation, further insights, and deployment strategies: [here](https://github.com/vivianamarquez/Regression-Sklearn-Diabetes-Dataset/blob/main/Regression_Example.ipynb).**
 
-**Website for this repo: [here](https://vivianamarquez.com/Regression-Sklearn-Diabetes-Dataset/).**
+**Website for this repo: [here](https://github.com/mimibhatt/Price_Of_A_Car).**
 
 ## Business Goal
 
