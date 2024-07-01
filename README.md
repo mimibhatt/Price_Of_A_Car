@@ -14,7 +14,7 @@ The goal is to understand what factors make a car more or less expensive. This w
 The data set is used car data of 426K rows and 17 columns. The dataset contains 4 numeric variables, 13 categorical variables and the target variable is the price of a car.
 
 
-![Distribution of Target Variable](https://github.com/mimibhatt/Price_Of_A_Car/tree/main/images/histplot.png)
+![Distribution of Target Variable](images/histplot.png)
 
 ## Modeling and performance
 
